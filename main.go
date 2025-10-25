@@ -459,8 +459,8 @@ func main() {
 	if !*flagSilent {
 		fmt.Printf("%s", colorGoldenBrown)
 		fmt.Println("╔═══════════════════════════════════════════════╗")
-		fmt.Println("║   JavaScript Secret Finder v2.0.1             ║")
-		fmt.Println("║   Developed by github.com/h6nt3r              ║")
+		fmt.Println("║   JSleuth						             ║")
+		fmt.Println("║   Developed by github.com/vijay922            ║")
 		fmt.Println("╚═══════════════════════════════════════════════╝")
 		fmt.Printf("%s\n", colorReset)
 	}
