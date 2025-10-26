@@ -256,7 +256,7 @@ func fetchURL(target string) (string, int, string, error) {
 	if err != nil {
 		return "", 0, "", err
 	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (compatible; jssf/2.0; +https://github.com/h6nt3r)")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.1")
 	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
 	req.Header.Set("Accept-Language", "en-US,en;q=0.5")
 	
@@ -362,11 +362,11 @@ func readLines(path string) ([]string, error) {
 // --- Show usage ---
 func showUsage() {
 	fmt.Fprintf(os.Stderr, `
-%sJavaScript Secret Finder v2.0.1%s
-Developed by github.com/h6nt3r
+%sJavaScript Secret & Endpoint Discovery Tool%s
+Developed by github.com/vijay922
 
 Usage:
-  jssf [options]
+  JSleuth [options]
 
 Options:
   -u <url>          Scan a single URL
@@ -385,10 +385,10 @@ Options:
   -h                Show this help
 
 Examples:
-  jssf -u https://example.com/app.js -secret
-  jssf -f urls.txt -secret -links -thread 10
-  cat urls.txt | jssf -secret -o results.txt
-  jssf -u https://example.com -custom secret,links -exclude png,jpg
+  JSleuth -u https://example.com/app.js -secret
+  JSleuth -f urls.txt -secret -links -thread 10
+  cat urls.txt | JSleuth -secret -o results.txt
+  JSleuth -u https://example.com -custom secret,links -exclude png,jpg
 
 `, colorGoldenBrown, colorReset)
 }
@@ -458,10 +458,10 @@ func main() {
 
 	if !*flagSilent {
 		fmt.Printf("%s", colorGoldenBrown)
-		fmt.Println("╔═══════════════════════════════════════════════╗")
-		fmt.Println("║   JSleuth - JavaScript Secret & Endpoint      ║")
-		fmt.Println("║   Developed by github.com/vijay922            ║")
-		fmt.Println("╚═══════════════════════════════════════════════╝")
+		fmt.Println("╔══════════════════════════════════════════════════════════════╗")
+		fmt.Println("║   JSleuth - JavaScript Secret & Endpoint Discovery Tool      ║")
+		fmt.Println("║   Developed by github.com/vijay922                           ║")
+		fmt.Println("╚══════════════════════════════════════════════════════════════╝")
 		fmt.Printf("%s\n", colorReset)
 	}
 
