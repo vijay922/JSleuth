@@ -857,7 +857,7 @@ func main() {
 	if !*flagSilent {
 		fmt.Printf("%s", colorGoldenBrown)
 		fmt.Println("╔══════════════════════════════════════════════════════════════╗")
-		fmt.Println("║   JSleuth - Enhanced JavaScript Discovery Tool              ║")
+		fmt.Println("║   JSleuth - Enhanced JavaScript Discovery Tool               ║")
 		fmt.Println("║   Developed by github.com/vijay922                           ║")
 		fmt.Println("╚══════════════════════════════════════════════════════════════╝")
 		fmt.Printf("%s\n", colorReset)
